@@ -101,8 +101,15 @@ with st.sidebar:
     st.markdown('<div class="sidebar-sub">Paper Summarizer & Analyzer</div>', unsafe_allow_html=True)
     st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
-    api_key = st.text_input("🔑 Groq API Key (Free)", type="password", placeholder="gsk_...", help="Get free key from https://console.groq.com")
+    # Load from Streamlit secrets (cloud) or .env (local)
+groq_key = st.secrets.get("GROQ_API_KEY", "") or os.getenv("GROQ_API_KEY", "")
 
+    # Load from Streamlit secrets (cloud) or .env (local)
+    groq_key = st.secrets.get("GROQ_API_KEY", "") or os.getenv("GROQ_API_KEY", "")
+    api_key = st.text_input(
+    "🔑 Groq API Key (Free)", 
+    value=groq_key,
+    type="password", placeholder="gsk_...", help="Get free key from https://console.groq.com")
     st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
     st.markdown("**📚 History**")
 
