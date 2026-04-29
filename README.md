@@ -28,19 +28,6 @@ An AI-powered web app that summarizes research papers and answers questions abou
 
 ---
 
-## 📁 Project Structure
-
-```
-Research-Paper-Summarizer-using-Generative-AI/
-├── app.py                # Main Streamlit app
-├── pdf_processor.py      # PDF extraction and text chunking
-├── embeddings_faiss.py   # FAISS index creation and retrieval
-├── summarizer.py         # GPT-based summarization
-├── rag_qa.py             # RAG-based question answering
-├── database.py           # SQLite DB for history storage
-├── evaluation.py         # Summary quality metrics
-├── requirements.txt      # Dependencies
-└── README.md
 ```
 
 ---
@@ -75,10 +62,3 @@ You will need an **OpenAI API key** to use this app.
 - Enter it directly in the app sidebar (it is never stored)
 
 ---
-
-## 📬 Contact
-
-**Shweta Jadhav**
-- 📧 jadhavshweta477@gmail.com
-- 💼 [LinkedIn](https://www.linkedin.com/in/shweta-jadhav-87a240276)
-- 🐙 [GitHub](https://github.com/shweta-016)
