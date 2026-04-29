@@ -101,8 +101,7 @@ with st.sidebar:
     st.markdown('<div class="sidebar-sub">Paper Summarizer & Analyzer</div>', unsafe_allow_html=True)
     st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
-    # Load from Streamlit secrets (cloud) or .env (local)
-groq_key = st.secrets.get("GROQ_API_KEY", "") or os.getenv("GROQ_API_KEY", "")
+   
 
     # Load from Streamlit secrets (cloud) or .env (local)
     groq_key = st.secrets.get("GROQ_API_KEY", "") or os.getenv("GROQ_API_KEY", "")
