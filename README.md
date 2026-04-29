@@ -26,11 +26,6 @@ An AI-powered web app that summarizes research papers and answers questions abou
 | Database | SQLite |
 | Frontend | Streamlit |
 
----
-
-```
-
----
 
 ## 🚀 Setup & Run
 
